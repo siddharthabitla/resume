@@ -1,0 +1,307 @@
+\documentclass[9pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[4]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \smallskip
+			{#2}\\ \smallskip 
+			{#3}\\ \smallskip
+			{#4}\smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{Siddhartha Bitla}{http://in.linkedin.com/in/siddharthabitla/}{siddhartha.bitla@gmail.com}{bitlasiddhartha@gmail.com}  \centerline{(+91) 9490379968} \centerline{(+91) 7022369720} 
+
+\smallskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Objective
+\header{Career Objective}
+
+\begin{body}
+	\vspace{14pt}
+	To work in a firm with a professional work driven environment where I can utilize and apply my knowledge, skills which would enable me as a Post-Graduate fresher to grow while fulfilling organizational goals.
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+\header{Work Experience}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Research Intern}{} \hfill \emph{Dec'13 - May'14} \\
+	\textbf{Xoanon Analytics, Chennai, TN}{} \\
+	\emph{http://xoanonanalytics.com/} \\
+	\textit{Research Topic} : Public Authentication Methods. \\
+	\textit{Platform} : Python, R scripting, e1072 library.\\
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Educational Credentials}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{M.Tech. in Computer Science and Engineering --- CGPA 7.47}{} \hfill \emph{2012 - 2014}{} \\
+	\emph{VIT University}, Vellore, Tamil Nadu{}. \\
+  \medskip
+	\textbf{B.Tech. in Electronics and Communication Engineering --- Aggregate 66.62\%} \hfill \emph{2007 - 2011} \\
+	\emph{Jayamukhi Institute of Technological Scienses}, Warangal, Telangana{}.\\
+	\medskip
+	\textbf{Board of Intermediate Education --- Aggregate 89.9\%} \hfill \emph{2005 - 2007}{} \\
+	\emph{Narayana Junior College}, Hyderabad, Telangana{}. \\
+	\medskip
+	\textbf{Board of Secondary Education --- Aggregate 79\%} \hfill \emph{2005}{} \\
+	\emph{Thapar Vidya Vihar}, Kamalapuram, Warangal, Telangana{}. \\
+
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{Skills}
+
+\begin{body}
+	\vspace{14pt}
+	\emph{\textbf{Programming:}}{} C, C++, Data Structures, MATLAB, \LaTeX. \\
+	\medskip
+	\emph{\textbf{Assembly language:}}{} MIPS, IA32. \\
+	\medskip
+	\emph{\textbf{Scripting:}}{} R, Unix Shell Scripting, Perl, Python. \\
+	\medskip
+	\emph{\textbf{Operating Systems:}}{} Linux Debian---Ubuntu, Fedora, Mint---, Unix, Windows XP/7/8. \\
+	\medskip
+	\emph{\textbf{Tools \& Libraries:}}{} NS2, Numpy, Scipy, LibSVM-3.17, e1072, RStudio, Intel Vtune analyser, Monodevelop. \\
+	\medskip
+	\emph{\textbf{Editors \& IDE's:}}{} Emacs, Vi(M), Code::Blocks, Visual Studio. \\
+	\medskip
+	\emph{\textbf{Other Skills:}}{} Machine learning concepts and algorithms, Circuit Analysis, Control systems.
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Projects
+\header{Projects History}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Public Authentication Methods} \hfill \emph{Internship, M.Tech. thesis, Winter 2014}\\
+	
+	\begin{itemize}
+		\item This thesis is current research work in authenticating an individual by the online traffic produced in social media like twitter, facebook, linkedin. Mathematical model is trained dynamically based on the weights calculated.
+		\item Built, understanding the dataset \& system with statistical analysis using R and build mathematical model for the dataset. Project involves parsing the tweets and calculating weights based on parsed string.
+	\end{itemize}
+	\medskip
+	
+	\textbf{Ear pattern recognition} \hfill \emph{M.Tech. thesis, Winter 2014}\\
+	
+	\begin{itemize}
+		\item This thesis is research work on \textit{machine learning}, with each binary image of 272$\times$204 from IIT Delhi Ear dataset is used for feature extraction of each image's \textit{Texture features} \& \textit{2-D FFT feature} using \textit{iPython \& scikit-learn} machine learning tool.
+		\item Feature's extracted are mapped to \textit{MATLAB} for classification with Texture features using SVM and calculated efficiency if 13\%. And also mapped to \textit{RStudio} for statistical analysis \& classification using SVM with \textit{e1072} library in R programming for 2-D FFT feature and calculated efficiency of 26\%.
+	\end{itemize}
+	\medskip
+	
+	\textbf{Pattern Recognition on character images with Support Vector Machines} \hfill \emph{Winter 2013}\\
+	
+	\begin{itemize} 
+		\item The project's main emphasis is on recognising the unknown hand written character images. The feature are extracted for each character image which gives 1$\times$55 dimensional feature vector. Classification is done using \emph{support vector machine} algorithm using \emph{libsvm-3.17} library with MATLAB as interface. The project's classification accuracy is 76.6\%.
+		\item The calculated approximate efficiency of 76.6\% is obtained in classifying the test dataset on trained SVM kernel function.
+	\end{itemize}
+\medskip
+
+	\textbf {Wavelet Based Image Enhancement Technique for Aerial Imagery} \hfill \emph{Fall 2011}\\
+	
+	\begin{itemize} 
+		\item Wavelet-based dynamic range compression algorithm used to improve the visual quality of digital images captured in the high dynamic range scenes with non-uniform lighting conditions.
+		\item The algorithm can further be applied to video streaming for aviation safety. In this project the latest version of the proposed algorithm which is able to enhance aerial images so that the enhanced images are better than direct human observation.
+	\end{itemize}
+\end{body}
+
+\smallskip
+
+% \newpage{} % uncomment this line if you want to force a new page
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Academic Roles
+\header{Academic Roles}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{GATE Scholarship Assistance}, \emph{lab \& faculty assistance} \hfill \emph{Fall'12 - Winter'14} \\
+	\begin{itemize}
+	\item Rendered service to \emph{VIT University, Vellore} with 8\emph{hrs} of lab and faculty assistance per week.
+	\end{itemize}
+	\medskip
+		
+	\textbf{Research}, \emph{Machine Learning \& Image Pattern Recognition} \hfill \emph{Winter'13 Sem - Winter'14} \\
+	\begin{itemize}
+	\item Using the ear dataset obtained from IIT Delhi, I would extract the features from the binary image and analyse the features from the quantised images obtained from the \emph{MATLAB} code execution on a particular image.
+	\item FFT  processor, which is widely used in multimedia processing within any DSP chip is studied and improved its architectural design which improves its through-put \& computational time.
+	\end{itemize}
+\medskip
+	
+	\textbf{Project member} \hfill \emph{Fall'12 - Winter'13} \\
+	\begin{itemize}
+	\item Developed assembly/machine code for various scenarios with \emph{MIPS} assembly language.
+	\item Developed code for parallel programming in \emph{C} language using \emph{OpenMP}.
+	\item Designed a on-line job portal using \emph{Java} jsp and servlets with Net Beans IDE and \emph{Oracle} for database connection.
+	\item Implemented and simulated uni-casting and multi-casting with \emph{UDP \& TCP/IP} networks in \emph{NS2} tool, and analysed with the \emph{Trace Graph} tool. \emph{NS2} tool was also used in creating new applications with networking concepts.
+	\item Machine learning with feature extraction from hand written characters using \emph{MATLAB}.
+	\end{itemize}
+
+\end{body}
+
+\smallskip
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Extra Curricular Activities
+\header{Extra Curricular Activities}
+
+\begin{body}
+	\vspace{14pt}
+	\begin{itemize}
+	\item Donated blood in camp organised by \emph{Tamil Nadu state AIDS control society \& blood transfusion council} at VIT Vellore.
+	\item IEEE student member for 2007-2008 under NIT Warangal student zone.
+	\item Actively participated and won prizes in Essay writing, Debate and Quiz competitions at school.
+	\item One of the organising members of \emph{`Techno-jits'} national level technical level symposium at my UG college.
+	\item Donating money and food to orphanage for blind and mentally retarded persons at Warangal city. 
+	\end{itemize}
+\end{body}
+
+\smallskip
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Achievements
+\header{Achievements}
+
+\begin{body}
+	\vspace{14pt}
+	\begin{itemize}
+	\item Qualified with 93 percentile in GATE '12 for \emph{Electronics \& Communication Engineering} paper, and have selected for stipend at VIT University, Vellore.
+	\item Stood $2^{nd}$ in All-India painting competition organised by \emph{BILT Industries} at school.
+	\item Paper presentation on \emph{4G mobile communication} and \emph{Ultra Sonic sound} at National level technical symposium.
+	\end{itemize}
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Personal Details
+\header{Personal Details}
+
+\begin{body}
+	\vspace{14pt}
+	
+\textbf{Father Name:}{} \hfill Shri. Mallikarjuna Swamy Bitla{} \\
+\medskip
+\textbf{Permanent Address:}{} \hfill Qtr. No : F - 85, APR Colony,{}\\
+	\hfill Kamalapuram, Mangapet Mandal,{}\\
+	\hfill Warangal District, Telangana,{}\\
+	\hfill India, 506 172.{}\\
+\medskip
+\textbf{Date of Birth:}{} \hfill $9^{th}$ May 1990.{}\\
+\medskip
+\textbf{Languages known:}{} \hfill Telugu, Hindi, English.{}\\
+\medskip
+\textbf{Marital status:}{} \hfill Single.{}\\
+\medskip
+\textbf{Nationality:}{} \hfill Indian.{}\\
+\medskip
+\textbf{Interest \& Hobbies:}{} \hfill IRC chatting, Philately, Painting, Gardening, Playing shuttle badminton,{}\\ \hfill Reading books, Writing blogs, Browsing, Fashions.{}
+
+\end{body}
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Declaration
+
+\header{Declaration}
+
+\begin{body}
+	\vspace{14pt}
+ I hear-by declare that the above written particulars are true to the best of my knowledge and belief.
+\medskip
+\medskip
+\medskip
+\begin{flushright}
+\textbf{Siddhartha Bitla}
+\end{flushright}
+\end{body}
+
+\end{document}
+
