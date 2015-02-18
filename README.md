@@ -1,4 +1,4 @@
-Siddhartha Bitla
+My LaTeX Resume
 ----
 
 This repository contains *LaTeX* typesetted resume. It also contains the _fullpage.sty_ and _tweaklist.sty_ class files supporing my documentation.
